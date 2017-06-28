@@ -1,0 +1,37 @@
+Cuando se tenga que añadir un nuevo usuario estos son los cambios que se tiene que hacer
+
+ir al archivo empleados y añadir el empleado, recordar que hay dos tipos de tareas.
+    - tareas no comerciales
+    -tareas comerciales
+Hay que tener un orden entonces si el nuevo es un coordinador a coordinador, si es inspector a inspector, 
+y si es un director a director
+
+La zona de mis documentos esta en el menu, entonces para modificar el usuario o lo que sea, tenemos que ir
+a su correspondiente carpeta.
+
+Los excels sin las formulas, es decir, los que son para los territoriales siguen esta ruta.
+    menus/resumenes/territoriales
+Los excels con las formulas va en un archivo rar al igual que los cambios
+    menus/resumenes/comerciales
+Los excels de las campañas iran en
+    menus/archivos/ [...]
+------------------------------------------------------------------------------------------------------------------------
+Tenemos que comprobar si los esta bien agregado el perfil del jefe (JUAN) ya que puede haber problemas
+con las rutas
+
+SUBDIRECCION COMERCIAL NORTE
+    - MIS DOCUMENTOS
+    - CARTERA ZONA NORTE ( GALICIA, LEON-ASTURIAS )
+    - PLANIFICAR TAREAS
+
+SUBDIRECCION COMERCIAL SUR
+    - MIS DOCUMENTOS
+    - CARTERA ZONA NORTE ( MADRID, CADIZ, TENERIFE )
+    - PLANIFICAR TAREAS
+
+RESPONSABLE VIDA - MADRID
+    - PERFIL PARECIDO AL DE CARLOS, DONDE POR AHORA NO TIENE EMPLEADOS
+    - ZONA DE MIS DOCUMENTOS
+    - PLANIFICAR TAREAS
+    - ZONA CAMPAÑAS
+------------------------------------------------------------------------------------------------------------------------
