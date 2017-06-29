@@ -12,7 +12,7 @@
 	$terminal 		="1";
 	$amount 		=$importe;
 	$currency 		="978";
-	$transactionType ="0";
+	$transactionType ="L";
 	$merchantURL 	=""; /*URL DE NOTIFICACIÓN (URL donde el TPV Virtual enviará una comunicación EN SEGUNDO PLANO con la información de la operación FINALIZADA,
 							tanto en operaciones ACEPTADAS como en operaciones DENEGADAS) */
 	$urlOK 			=""; //URL A LA QUE SE REDIRIGIRÁ AL TITULAR CUANDO UNA COMPRA ESTÉ AUTORIZADA

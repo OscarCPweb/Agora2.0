@@ -1,4 +1,4 @@
-<?php
+xºx<?php
 include ("../inc/mysql.inc.php");
 conecta($c);
 
@@ -78,12 +78,7 @@ FIGURAS
       $id = '17';
       include ("../inc/menu/tareas/tareas-nocomerciales/tareas.php");
     }
-    /* ALVARO MARTIN */
-    else if ($_SESSION['nombre']=='018'){
-      $user =  '28';
-      $id = '28';
-      include ("../inc/menu/tareas/tareas-comerciales/tareas.php");
-    }
+
     /* DAVID GONZALEZ */
     else if ($_SESSION['nombre']=='008'){
       $user =  '17';
@@ -129,12 +124,6 @@ FIGURAS
     if ($_SESSION['nombre']=='011'){
       $user =  '21';
       $id = '21';
-      include ("../inc/menu/tareas/tareas-comerciales/tareas.php");
-    }
-    
-    elseif ($_SESSION['nombre']=='Marisa'){
-      $user =  '43';
-      $id = '43';
       include ("../inc/menu/tareas/tareas-comerciales/tareas.php");
     }
     /* BENJAMIN */

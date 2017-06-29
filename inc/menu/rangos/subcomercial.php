@@ -21,7 +21,7 @@ if($_SESSION['nombre']=='028'){
     <a href='#misdocumentos028' data-toggle='modal'><i class='fa fa-folder'></i> Mis Documentos</a>
   </li>
   <li>
-    <a href='../menus/empleados/empleados_subcomercial.php'><i class='fa fa-users'></i> Empleados DT</a>
+    <a href='../menus/empleados/empleados_subcomercial.php'><i class='fa fa-users'></i>DT Norte</a>
   </li>
   <li>
   <a href='../acceso/cerrar_session.php'><i class='fa fa-trash-o'></i> Cerrar Sesión</a>
@@ -45,8 +45,11 @@ SUBDIRECCION COMERCIAL SUR
 if($_SESSION['nombre']=='005'){
   echo
   "
-  <li>
-    <a href='resumenes/territoriales/territorial-centro.xlsx' data-toggle='modal'><i class='fa fa-star'></i> Centro</a>
+   <li>
+    <a href='resumenes/territoriales/territorial-tenerife.xlsx'><i class='fa fa-star'></i> Tenerife</a>
+  </li>
+   <li>
+    <a href='resumenes/territoriales/territorial-centro.xlsx'><i class='fa fa-star'></i> Madrid</a>
   </li>
   <li>
     <a href='resumenes/territoriales/territorial-andalucia.xlsx'><i class='fa fa-star'></i> Andalucia</a>
@@ -55,7 +58,7 @@ if($_SESSION['nombre']=='005'){
     <a href='#misdocumentos005' data-toggle='modal'><i class='fa fa-folder'></i> Mis Documentos</a>
   </li>
   <li>
-    <a href='../menus/empleados/empleados_subcomercial.php'><i class='fa fa-users'></i> Empleados DT</a>
+    <a href='../menus/empleados/empleados_subcomercial.php'><i class='fa fa-users'></i>DT Sur</a>
   </li>
   <li>
   <a href='../acceso/cerrar_session.php'><i class='fa fa-trash-o'></i> Cerrar Sesión</a>

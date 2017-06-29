@@ -10,64 +10,32 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <?php
-session_start();
 
 	include ("../../inc/mysql.inc.php");
 	conecta($c);
 	$id_;
 	$nombre;
-	if($_SESSION['id']=='17'){
-		$oficina = 'galicia norte';
-	}
-	elseif($_SESSION['id']=='39'){
-		$oficina = 'galicia sur';
-	}
-	if($_SESSION['id']=='38'){
-		$oficina = 'asturias';
-	}
-	if($_SESSION['id']=='20'){
-		$oficina = 'ponferrada';
-	}
-	if($_SESSION['id']=='60'){
-		$oficina = 'leon';
-	}
-	if($_SESSION['id']=='27'){
-		$oficina = 'madrid';
-		$cartera = 'madrid1';
-	}
-	if($_SESSION['id']=='21'){
-		$oficina = 'madrid2';
-		$cartera = 'madrid2';
-	}
+
 	if($c==null){
 		echo ("Fallo de conexion");
 	}
 	else{
 		mysqli_select_db($c, "db664165726");
 
-		/*ANTONIO*/
-		if($_SESSION['id']=='27'){
-			$sql="SELECT nombre, password, id, rango, login, zona, oficina, descripcion,image, cartera  FROM usuarios WHERE jefe='director oficina' AND oficina='$oficina' AND cartera = '$cartera'";
-		}
-		/*MERCEDES*/
-		elseif($_SESSION['id']=='21'){
-			$sql="SELECT nombre, password, id, rango, login, zona, oficina, descripcion,image, cartera  FROM usuarios WHERE jefe='director oficina' AND oficina='$oficina' AND cartera = '$cartera'";
-		}
-		/*DEMÁS DIRECTORES DE OFICINA*/
-		else{
-			$sql="SELECT nombre, password, id, rango, login, zona, oficina, descripcion,image, cartera  FROM usuarios WHERE jefe='director oficina' AND oficina='$oficina'";
-		}
+		$sql="SELECT nombre, password, id, rango, login, zona, oficina, descripcion,image, cartera  FROM usuarios WHERE jefe='rrhh'";
+
+
 		$resultado=mysqli_query($c, $sql);
+
 		if($resultado){
 			$filas=mysqli_num_rows($resultado);
 			if($filas == 0){
-				echo "Error";
+				echo '<script type="text/javascript">window.location.href="../index.html";</script>';
 			}
 
 			else{
 				//el fetch pasa la informacion a $registro y avanza el puntero a la siguiente fila
 				echo "<div class='container'><div class='row'>";
-				$oficina;
 				while ($registro = mysqli_fetch_array($resultado)){
 					$nombre = $registro['nombre'];
 					$_SESSION['zona']=$registro['zona'];
@@ -75,7 +43,7 @@ session_start();
 					$_SESSION['nombre_']=$registro['nombre'];
 					$_SESSION['usuario']=$registro['id'];
 					$cadena="usuario=".$_SESSION['nombre_']."&zona=".$_SESSION['zona'];
-					$oficina = $registro['oficina'];
+
 					echo"
 					<div class='col-md-6'>
 					        <div class='well well-sm'>
@@ -93,8 +61,6 @@ session_start();
 					    </div>
 
 					";
-
-
 					/*
 
 

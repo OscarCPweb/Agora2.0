@@ -37,6 +37,9 @@
             <a href='#misdocumentos-rrhh' data-toggle='modal'><i class='fa fa-folder-open'></i> Mis Documentos</a>
           </li>
           <li>
+            <a href='../menus/empleados/empleados_rrhh.php'><i class='fa fa-users'></i> Empleados</a>
+          </li>
+          <li>
             <a href='../acceso/cerrar_session.php'><i class='fa fa-trash-o'></i> Cerrar Sesión</a>
           </li>
 
